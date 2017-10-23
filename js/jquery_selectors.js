@@ -46,7 +46,7 @@ function eventHandlerPageSetUp() {
         var $elems = $("span:contains(First 4)");
         clear();
         bold([$elems, $first4]);
-        $(".label").html("Odd");
+        $(".label").html("First 4");
         
     }
     

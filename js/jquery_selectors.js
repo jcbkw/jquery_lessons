@@ -10,7 +10,7 @@ function eventHandlerPageSetUp() {
             case "even" : {setEven(); break} ;
             case "odd"  : {setOdd(); break};
             case "first": {setFirst4(); break}; 
-            
+            case "first-last": {setFirstLast(); break};
             
         }
         console.log("odd is working");
@@ -47,6 +47,16 @@ function eventHandlerPageSetUp() {
         clear();
         bold([$elems, $first4]);
         $(".label").html("First 4");
+        
+    }
+    function setFirstLast() {
+        
+        var $first = $("li:first-child");
+        var $last = $("li:last-child");
+        var $elems = $("span:contains(Last)");
+        clear();
+        bold([$elems, $first, $last]);
+        $(".label").html("First & Last");
         
     }
     
